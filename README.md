@@ -25,6 +25,12 @@ Then, in a separate terminal, run the following command to control the robot usi
 ```
 rosrun key_teleop key_teleop.py
 ```
+The exploration in Gazebo (real state) can be seen below:
+<img src="Images/gazebo_speed2.gif" alt="TIAGo Robot" width="70%">
+
+The exploration in RViz (robot state) can be seen below:
+<img src="Images/rviz_speed2.gif" alt="TIAGo Robot" width="70%">
+
 Once the map has been fully explored, we can save it by running the command below. In this case, I have chosen to name the map "office". The map will be saved in the path: "/home/user/.pal/tiago_maps/office/".
 
 ```
