@@ -30,9 +30,11 @@ Then, in a separate terminal, run the following command to control the robot usi
 rosrun key_teleop key_teleop.py
 ```
 The mapping process on Gazebo (real state) can be seen on the right, and the mapping process in RViz (robot state) can be seen on the left:
+
 <p align="center">
-<img src="Images/mapping.gif" alt="TIAGo Robot" width="50%">
+<img src="Images/mapping.gif" width="80%">
 </p>
+
 
 Once the map has been fully explored, we can save it by running the command below. In this case, I have chosen to name the map "office". The map will be saved in the path: "/home/user/.pal/tiago_maps/office/".
 
@@ -41,7 +43,7 @@ rosservice call /pal_map_manager/save_map "directory: 'tiago_kitchen'"
 ```
 Now, all terminals can be stopped. The resulting map is shown below.
 <p align="center">
-<img src="Images/office/kitchen_map.png" width="50%">
+<img src="Images/tiago_kitchen/kitchen_map.png" width="40%">
 </p>
 
 ## Localization
@@ -80,7 +82,9 @@ The costmap now only takes into account obstacles in the static map and the syst
 The result is shown in the following pictures, where invalid particles are removed as more laser scans can be matched with the map and the localization converges eventually to the correct pose.
 
 
-
+<p align="center">
+<img src="Images/localization.gif" width="80%">
+</p>
 
 
 ## Navigation 
@@ -115,7 +119,7 @@ Finally, the robot stops when the target goal pose has been reached up to a user
 
 
 <p align="center">
-<img src="Images/office/navigation.gif" width="50%">
+<img src="Images/navigation.gif" width="70%">
 </p>
 
 # Highlights and Challenges
