@@ -15,7 +15,7 @@ The necessary software requirements for this project can be found [here](https:/
 
 
 <details>
-<summary style="font-size: 22px;">Exploration</summary>
+<summary><h2>Exploration</h2></summary>
 The goal of exploration is to contruct a complete map of the environment.
 
 Exploring an unknown environment requires mapping and modeling the environment, and at the same time localizing the robot within it. This process implies using SLAM techniques (Simultaneous Localization and Mapping) along with exploration and planning algorithms. 
