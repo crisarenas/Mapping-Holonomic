@@ -64,7 +64,7 @@ Now, all terminals can be stopped. The resulting map is shown below.
 
 _____________
 <details>
-<summary style="font-size: 22px;">Localization</summary>
+<summary><h2>Localization</h2></summary>
 
 The kitchen map is already built. The following command opens the kitchen world in Gazebo, the created map in RViz, and places the robot in a random position in the environment. Then, AMCL localization is used to estimate the real position of the robot.
 
@@ -117,7 +117,7 @@ The localization process is shown in the following image
 
 ___
 <details>
-<summary style="font-size: 22px;">Navigation</summary>
+<summary><h2>Navigation</h2></summary>
 Kill the teleoperation node and use the 2D Nav Goal tool in RViz to indicate the final position and orientation of the robot. A global planner will then compute a path for the robot to follow.
 
 
