@@ -1,6 +1,10 @@
 # Software Requirements
-* **Ubuntu version:** Ubuntu 18.04.6 LTS (Bionic Beaver) needs to be used in this project. In this case, it was installed in a VirtualBox virtual machine via the [Ubuntu image](https://releases.ubuntu.com/18.04/). My recommendation is to use the unattended installation and make sure to give it at least 25 GB of available memory, as after installing ROS and the TIAGo package 15Gb will be occupied.
 
-* **ROS:** Once Ubuntu is installed, ROS (Robot Operating System) must be installed. The version compatible with Ubuntu 18 is ROS Melodic, and its installation guide can be found [here](http://wiki.ros.org/melodic/Installation/Ubuntu). We will also use the ROS 3D simulator known as Gazebo to see the real state of the robot in space and the 2D visualiser RViz, which allows us to see the robot's perception of its environment.
+## 1. Ubuntu version
+The version of Ubuntu used in this project is Ubuntu 18.04.6 LTS (Bionic Beaver), but other versions of Ubuntu can also be used. If possible, it is recommended to run Ubuntu on a computer with a native Linux installation. However, in this case, it is installed in a VirtualBox VM via the [Ubuntu image](https://releases.ubuntu.com/18.04/). For the VM, it is recommended to use the unattended installation and allocate at least 25 GB of available memory, as the installation of ROS and the TIAGo package will occupy approximately 15 GB.
 
-* **TIAGo Packages:** Finally, install the TIAGo packages for ROS Melodic. To do so, follow the instructions on [this website](http://wiki.ros.org/Robots/TIAGo/Tutorials/Installation/InstallUbuntuAndROS).
+## ROS 
+After installing Ubuntu, the next step is to install ROS (Robot Operating System). The version compatible with Ubuntu 18 is ROS Melodic, and its installation guide can be found [here](http://wiki.ros.org/melodic/Installation/Ubuntu). Additionally, the project uses the ROS 3D simulator known as Gazebo to visualize the real state of the robot in space, and the 2D visualizer RViz, which allows the user to see the robot's perception of its environment.
+
+## TIAGo Packages
+ "Next, the TIAGo packages for ROS Melodic must be installed. To do so, follow the instructions on [this website](http://wiki.ros.org/Robots/TIAGo/Tutorials/Installation/InstallUbuntuAndROS).
