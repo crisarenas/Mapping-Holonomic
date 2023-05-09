@@ -62,7 +62,7 @@ Now, all terminals can be stopped. The resulting map is shown below.
 
 
 
-_____________
+________________
 <details>
 <summary><h2>Localization</h2></summary>
 
@@ -110,9 +110,8 @@ The localization process is shown in the following image
 </p>
 
 </details>
-___
 
-
+___________________
 
 
 
