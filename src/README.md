@@ -29,14 +29,19 @@ The [tiago_mapping launch file](https://github.com/crisarenas/Mapping-Holonomic/
 
 
 ## Localization
-rosservice call /pal_map_manager/save_map "directory: 'tiago_kitchen'"
+The commands for mapping are the following:
 
-rosservice call /global_localization "{}"
+```
+$ roslaunch tiago_2dnav_gazebo tiago_navigation.launch public_sim:=true lost:=true world:=pal_kitchen base_type:=omni_base arm:=false end_effector:=false map:=$HOME/.pal/tiago_maps/configurations/tiago_kitchen
 
-rosservice call /move_base/clear_costmaps "{}"
+$ rosservice call /pal_map_manager/save_map "directory: 'tiago_kitchen'"
 
+$ rosservice call /global_localization "{}"
 
+$ rosservice call /move_base/clear_costmaps "{}"
+```
 
+``tiago_navigation.launch`` includes three other launch files. Once again, Gazebo and RViz are launched. Additionally, "navigation.launch" is launched, but in this time the "state" parameter is set up for localization instead of mapping.
 
 # Key Concepts:
 
