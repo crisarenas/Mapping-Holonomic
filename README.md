@@ -110,12 +110,12 @@ The localization process is shown in the following image
 </p>
 
 </details>
-
-
-
-
-
 ___
+
+
+
+
+
 <details>
 <summary><h2>Navigation</h2></summary>
 Kill the teleoperation node and use the 2D Nav Goal tool in RViz to indicate the final position and orientation of the robot. A global planner will then compute a path for the robot to follow.
@@ -132,7 +132,11 @@ Kill the teleoperation node and use the 2D Nav Goal tool in RViz to indicate the
 
 ____
 
-## Highlights and Challenges
+## References
+* [http://wiki.ros.org/Robots/TIAGo/Tutorials]()
+* [https://pal-robotics.com/wp-content/uploads/2022/01/Datasheet-TIAGo-OMNI-Base-2022.pdf]()
+* [http://wiki.ros.org/gmapping]()
+*
 * Comparativa turtlebot.
 * No poder teleoperar el modo omnidirecional por completo.
 * 
