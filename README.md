@@ -135,7 +135,3 @@ ____
 * [http://wiki.ros.org/Robots/TIAGo/Tutorials]()
 * [https://pal-robotics.com/wp-content/uploads/2022/01/Datasheet-TIAGo-OMNI-Base-2022.pdf]()
 * [http://wiki.ros.org/gmapping]()
-*
-* Comparativa turtlebot.
-* No poder teleoperar el modo omnidirecional por completo.
-* 
