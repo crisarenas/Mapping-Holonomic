@@ -1,5 +1,7 @@
+# Code Explanation
+This section provides a more detailed explanation of what we are running. It is also possible to access some launch files to see their functionality. However, if you want to delve into the code in more detail, please refer to the [software requirements](https://github.com/crisarenas/Mapping-Holonomic/blob/main/Software_Requirements.md) section.
 
-## Mapping
+## Mapping Process
 The command for mapping is the following:
 
 ```
@@ -28,7 +30,7 @@ The [tiago_mapping launch file](https://github.com/crisarenas/Mapping-Holonomic/
 
 
 
-## Localization
+## Localization Process
 The commands for mapping are the following:
 
 ```

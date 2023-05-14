@@ -11,6 +11,9 @@ Once you have completed the necessary software requirements or installed the pre
 </p>
 
 
+## Video Executing The Steps
+
+This [video](https://www.youtube.com/watch?v=DHS7YO99cpQ) might help you to understand this process a little better.
 
 <details>
 <summary><h2>Exploration</h2></summary>
@@ -126,7 +129,7 @@ Kill the teleoperation node and use the 2D Nav Goal tool in RViz to indicate the
 </details>
 
 
-
+________
 
 ____
 

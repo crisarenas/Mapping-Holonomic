@@ -19,3 +19,9 @@ source /home/<username>/<your_workspace_name>/src/setup.bash
 export ROS_WORKSPACE=/home/<username>/<your_workspace_name>
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$ROS_WORSPACE
 ```
+
+______
+
+
+
+admin pass
