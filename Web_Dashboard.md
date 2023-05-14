@@ -26,4 +26,4 @@ To create this web application, the following tools were used:
 Please click the image below to see the web interface in action and gain a better understanding of the React project:
 
 
-[![IMAGE ALT TEXT HERE](Images/web.jpg)](https://studio.youtube.com/video/4N1yLmPEd6s/edit)
+[![IMAGE ALT TEXT HERE](Images/web.jpg)](https://www.youtube.com/watch?v=4N1yLmPEd6s)
