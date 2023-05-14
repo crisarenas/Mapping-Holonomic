@@ -2,15 +2,13 @@
 
 This repository presents the process of exploration, localization, and navigation in a previously unknown map in ROS. For this purpose, the TIAGo robot from PAL Robotics is used with its omni-directional wheel configuration.
 
-The necessary software requirements for this project can be found [here](https://github.com/crisarenas/Mapping-TIAGo/blob/main/Software_Requirements.md).
+The necessary software requirements for this project can be found [here](https://github.com/crisarenas/Mapping-TIAGo/blob/main/Software_Requirements.md). 
+Once you have completed the necessary software requirements or installed the prepared virtual machine, we can proceed further in this document.
 
 
 <p align="center">
 <img src="Images/Tiago_omni.jpg" alt="TIAGo Robot" width="70%">
 </p>
-
-
-
 
 
 
@@ -22,9 +20,10 @@ Exploring an unknown environment requires mapping and modeling the environment, 
 
 The sensors that TIAGo uses to scan the environment are **two LIDARs (SICK TiM561)**, and the ROS package used for this is known as GMapping. GMapping updates the map in real-time as the sensors collect data.
 
-First, open a terminal and navigate to the TIAGo workspace. Then, run the following command to add the packages in the TIAGo project to the ROS system's package path. The command should be executed every time a new terminal window is opened within the workspace. 
+First, open a terminal and navigate to the TIAGo workspace. Then, run the following command to add the packages in the TIAGo project to the ROS system's package path. This command **should be executed every time a new terminal is opened**.
 
 ```
+cd ~/tiago_ws
 source ./devel/setup.bash
 ```
 
@@ -47,7 +46,7 @@ Now, explore the world until a precise map of it is constructed. The mapping pro
 </p>
 
 
-Once the map has been fully explored, save it by running the command below. In this case, I have chosen to name the map "tiago_kitchen". The map will be saved in the path: "/home/user/.pal/tiago_maps/tiago_kitchen".
+Once the map has been fully explored you can close the teleoperation terminal and save the map by running the command below. In this case, I have chosen to name the map "tiago_kitchen". The map will be saved in the path:``/home/<username>/.pal/tiago_maps/configurations/tiago_kitchen``.
 
 ```
 rosservice call /pal_map_manager/save_map "directory: 'tiago_kitchen'"
@@ -66,15 +65,15 @@ ________________
 <details>
 <summary><h2>Localization</h2></summary>
 
-The kitchen map is already built. The following command opens the kitchen world in Gazebo, the created map in RViz, and places the robot in a random position in the environment. Then, AMCL localization is used to estimate the real position of the robot.
+The kitchen map is already built. The following command opens the kitchen world in Gazebo and the created map in RViz Then, AMCL localization is used to estimate the real position of the robot.
 
 
 ```
-roslaunch tiago_2dnav_gazebo tiago_navigation.launch public_sim:=true lost:=true world:=pal_kitchen base_type:=omni_base arm:=false end_effector:=false map:=$HOME/.pal/tiago_maps/configurations/tiago_kitchen
+roslaunch tiago_2dnav_gazebo tiago_navigation.launch public_sim:=true world:=pal_kitchen base_type:=omni_base arm:=false end_effector:=false map:=$HOME/.pal/tiago_maps/configurations/tiago_kitchen
 ```
 
 
-To localize the robot, run the following command:
+To localize the robot, run the following command in a separate terminal:
 
 
 ```
@@ -92,7 +91,7 @@ The red arrows are the particles that represent possible poses of the robot. As 
 <img src="Images/initial_configuration.jpg" width="70%">
 </p>
 
-Now, help the particle filter to converge by moving the robot using teleoperation.
+Now, help the particle filter to converge by moving the robot using teleoperation in a separate terminal.
 ```
 rosrun key_teleop key_teleop.py
 ```
@@ -135,3 +134,4 @@ ____
 * [http://wiki.ros.org/Robots/TIAGo/Tutorials]()
 * [https://pal-robotics.com/wp-content/uploads/2022/01/Datasheet-TIAGo-OMNI-Base-2022.pdf]()
 * [http://wiki.ros.org/gmapping]()
+cd
