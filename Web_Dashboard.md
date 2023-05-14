@@ -1,7 +1,9 @@
 # Web Interface
+To access the source code of the web development, please refer to the [software requirements](https://github.com/crisarenas/Mapping-Holonomic/blob/main/Software_Requirements.md) section.
+____
 The web dashboard for TIAGo is designed to provide various functionalities such as joystick-based teleoperation, displaying position and velocity information, and visualizing the map generated during exploration. Users can teleoperate the robot using the joystick or click on a specific position on the map for the robot to navigate to.
 
-**To access the source code of the web development, please refer to the [software requirements](https://github.com/crisarenas/Mapping-Holonomic/blob/main/Software_Requirements.md) section.**
+
 
 To create this web application, the following tools were used:
 
