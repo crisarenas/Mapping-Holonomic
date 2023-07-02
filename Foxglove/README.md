@@ -7,7 +7,7 @@ Data framework and open source visualization.
 ***A lot easier than raw web development.***
 
 <p align="center">
-<img src="../Images/foxglove_teleop.jpg" alt="Foxglove teleoperation" width="80%">
+<img src="../Images/foxglove_teleop.jpg" width="80%">
 </p>
 
 
